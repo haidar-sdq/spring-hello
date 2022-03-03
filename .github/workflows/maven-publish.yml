@@ -37,3 +37,10 @@ jobs:
       with:
         name: github-actions-artifact
         path: artifacts
+    - name: Build and push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: haidarsdq/demo-images
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
