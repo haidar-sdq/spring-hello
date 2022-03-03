@@ -35,5 +35,5 @@ jobs:
     - name: Dowload the artifact
       uses: actions/download-artifact@v3
       with:
-        name: my-artifact
+        name: github-actions-artifact
         path: artifacts
