@@ -47,6 +47,6 @@ jobs:
     - name: Pull and Run Image
       run: |
         docker pull haidarsdq/demo-images:master-ca1ce6b
-        docker run -p 8080:8080 -d haidarsdq/demo-images:master-ca1ce6b
+        docker run -p 8080:8080 -d haidarsdq/demo-images:master-c35cfb1
         sleep 30
         curl http://localhost:8080/
