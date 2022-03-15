@@ -8,7 +8,7 @@ public class HomeController {
 
     @RequestMapping("/")
     String home() {
-        return "Hello from Java Container Running in Github Actions!";
+        return "Hello from Java Container Running in Github Actions!!";
     }
 
 }
